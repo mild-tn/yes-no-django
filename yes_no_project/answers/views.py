@@ -12,7 +12,11 @@ def answer_view(requests):
 
     answerRnd = random.choice(answers)
 
-    return render(requests, 'answer.html', context={'answer': answerRnd})
+    return render(
+        requests,
+        'answer.html',
+        context={'answer': answerRnd}
+    )
 
 
 def create_answer_view(requests):
