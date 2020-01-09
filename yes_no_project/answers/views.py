@@ -4,14 +4,10 @@ from answers.models import Answer
 from django.views import View
 import random
 
-# Create your views here.
-
 
 def answer_view(requests):
     answers = Answer.objects.all()
-
     answerRnd = random.choice(answers)
-
     return render(
         requests,
         'answer.html',

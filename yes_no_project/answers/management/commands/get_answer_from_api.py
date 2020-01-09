@@ -24,7 +24,5 @@ class Command(BaseCommand):
             text=data['answer'],
             image=data['image']
         )
-
         message = f'created: {str(answer.id)} {answer.text} {answer.image}'
-
         self.stdout.write(message, ending='')
