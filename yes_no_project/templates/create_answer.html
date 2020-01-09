@@ -1,16 +1,15 @@
 <html>
-    <head></head>
-    <body>
-        <h2>Answer</h2>
-        <form action="/create_answer/add" method="post">
-        {% csrf_token %}
-            Text :<br>
-            <input type="text" name="text">
-            <br>
-            image :<br>
-            <input type="text" name="image">
-            <br><br>
-            <input type="submit" value="Submit">
-        </form> 
-    </body>
+  <head></head>
+  <body>
+    <h2>Answer</h2>
+    <form action="/create-answer/add" method="post">
+      {% csrf_token %} Text :<br />
+      <input type="text" name="text" />
+      <br />
+      image :<br />
+      <input type="text" name="image" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
