@@ -1,7 +1,8 @@
-from django.contrib import admin
-from answers.models import Answer
+from django.contrib.admin import ModelAdmin, register
 
-# Register your models here.
-@admin.register(Answer)
-class AnswerAdmin(admin.ModelAdmin):
-    list_display = ('id','text','image')
+from .models import Answer
+
+
+@register(Answer)
+class AnswerAdmin(ModelAdmin):
+    list_display = ('id', 'text', 'image')
